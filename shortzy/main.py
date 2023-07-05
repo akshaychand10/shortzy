@@ -19,7 +19,7 @@ class Shortzy:
         if not self.api_key:
             raise Exception("API key not provided")
 
-        if self.base_site == "shareus.in":
+        if self.base_site == "shareus.io":
             self.shortener = Shareus(api_key, base_site=base_site)
         else:
             self.shortener = Adlinkfly(api_key, base_site=base_site)
@@ -132,7 +132,7 @@ class Shortzy:
             "du-link.in",
             "viplink.in",
             "shorturllink.in",
-            "shareus.in",
+            "shareus.io",
             "All droplink.co Alternative Websites",
         ]
         return "\n".join(available_websites)
