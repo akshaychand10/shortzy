@@ -5,7 +5,7 @@ import aiohttp
 
 
 class Shareus:
-    def __init__(self, api_key: str, base_site: str = "shareus.in"):
+    def __init__(self, api_key: str, base_site: str = "shareus.io"):
         self.api_key = api_key
         self.base_site = base_site
         self.base_url = f"https://api.{self.base_site}/shortLink"
